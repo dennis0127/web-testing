@@ -7,4 +7,4 @@ with SB(uc=True, locale_code="en", xvfb="True") as sb:
     sb.activate_cdp_mode(url)
     sb.uc_gui_click_captcha()
     sb.sleep(2)
-    sb.save_screenshot(f"test.png")
+    sb.save_screenshot("test.png")
