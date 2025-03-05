@@ -83,4 +83,4 @@ jobs:
         pytest verify_sb.py
     - name: Run python raw_easyjet.py --debug
       run: |
-        python raw_easyjet.py --debug
+        python test.py --debug
