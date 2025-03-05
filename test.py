@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 from seleniumbase import SB
 
-with SB(uc=True, locale_code="en", xvfb="True") as sb:
+with SB(uc=True, test=True, locale_code="en", xvfb="True") as sb:
     url = "https://www.ygg.re/"
-    sb.activate_cdp_mode(url)
+    sb.uc_open_with_reconnect(url, 5)
     sb.uc_gui_click_captcha()
-    sb.sleep(2)
-    sb.save_screenshot("test.png")
+    html_content = sb.get_page_source()
+    print(html_content)
