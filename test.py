@@ -9,4 +9,3 @@ with SB(uc=True, test=True, locale_code="en", xvfb="True") as sb:
     sb.uc_gui_click_captcha()
     html_content = sb.cdp.get_page_source()
     print(html_content)
-
