@@ -6,7 +6,7 @@ from seleniumbase import SB
 def test():
     with SB(uc=True, test=True, locale_code="en", xvfb="True") as sb:
         print("-----开始执行测试用例-----")
-        url = "https://testcontent.yyyow.top/"
+        url = "https://www.ygg.re/"
         sb.uc_open_with_reconnect(url, 5)
         # sb.activate_cdp_mode(url)
         # sb.sleep(2)
