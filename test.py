@@ -9,5 +9,5 @@ with SB(uc=True, test=True, locale_code="en", xvfb="True") as sb:
     sb.uc_gui_click_captcha()
     html_content = sb.cdp.get_page_source()
     print(html_content)
-    
-# 在这里添加一个换行符
+
+# 在这里添加一个换行符  <-- 删除空格或制表符
