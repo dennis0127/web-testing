@@ -11,8 +11,8 @@ def test():
         xvfb=True,
         incognito=True,
     ) as sb:
-        # url = "https://vstat.info/amazon.com"
-        url = "https://www.ygg.re/"
+        url = "https://vstat.info/amazon.com"
+        # url = "https://www.ygg.re/"
         sb.uc_open_with_reconnect(url, 5)
         # sb.activate_cdp_mode(url)
         print(sb.get_page_title())
