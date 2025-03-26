@@ -7,7 +7,8 @@ def test():
     with SB(uc=True, test=True, locale_code="en", xvfb=True) as sb:
         print("-----开始执行测试用例-----")
         # url = "https://vstat.info/amazon.com"
-        url = "www.planetminecraft.com/account/sign_in/"
+        # url = "www.planetminecraft.com/account/sign_in/"
+        url = "https://www.ygg.re/"
         # sb.uc_open_with_reconnect(url, 5)
         sb.activate_cdp_mode(url)
         print("-----开始执行测试用例2-----")
