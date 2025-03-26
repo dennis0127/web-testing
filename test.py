@@ -21,8 +21,8 @@ def test():
         print(sb.get_page_title())
         sb.sleep(2)
         print(sb.get_page_title())
-        html_content = sb.get_page_source()
-        print(html_content)
+        # html_content = sb.get_page_source()
+        # print(html_content)
 
 
 if __name__ == "__main__":
