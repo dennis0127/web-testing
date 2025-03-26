@@ -13,12 +13,12 @@ def test():
     ) as sb:
         # url = "https://vstat.info/amazon.com"
         url = "https://www.ygg.re/"
-        # sb.uc_open_with_reconnect(url, 5)
-        sb.activate_cdp_mode(url)
+        sb.uc_open_with_reconnect(url, 5)
+        # sb.activate_cdp_mode(url)
         sb.sleep(5)
         sb.uc_gui_click_captcha()
         sb.sleep(2)
-        html_content = sb.cdp.get_page_source()
+        html_content = sb.get_page_source()
         print(html_content)
 
 
