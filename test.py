@@ -4,7 +4,7 @@ from seleniumbase import SB
 
 
 def test():
-    with SB(uc=True, test=True, locale_code="en", xvfb="True") as sb:
+    with SB(uc=True, test=True, locale_code="en") as sb:
         print("-----开始执行测试用例-----")
         url = "https://www.ygg.re/"
         sb.uc_open_with_reconnect(url, 5)
