@@ -14,7 +14,7 @@ def test():
         print("-----开始执行测试用例2-----")
         # sb.sleep(5.2)
         sb.uc_gui_click_captcha()
-        sb.sleep(2)
+        # sb.sleep(2)
         print("-----开始执行测试用例3-----")
         html_content = sb.get_page_source()
         print(html_content)
