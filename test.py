@@ -4,7 +4,7 @@ from seleniumbase import SB
 
 
 def test():
-    with SB(uc=True, test=True, locale_code="en") as sb:
+    with SB(uc=True, test=True, locale_code="en", xvfb=True) as sb:
         print("-----开始执行测试用例-----")
         # url = "https://vstat.info/amazon.com"
         url = "www.planetminecraft.com/account/sign_in/"
