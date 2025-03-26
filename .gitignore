@@ -1,0 +1,9 @@
+__pycache__
+/app/*app.log
+/app/downloaded_files/*
+/app/data/*.mmdb
+/app/data/*.dat
+/downloaded_files
+/latest_logs
+/saved_cookies
+/.venv
