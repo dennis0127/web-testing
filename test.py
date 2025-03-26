@@ -4,7 +4,13 @@ from seleniumbase import SB
 
 
 def test():
-    with SB(uc=True, test=True, locale_code="en", xvfb=True) as sb:
+    with SB(
+        uc=True,
+        test=True,
+        locale_code="en",
+        xvfb=True,
+        incognito=True,
+    ) as sb:
         # url = "https://vstat.info/amazon.com"
         url = "https://www.ygg.re/"
         # sb.uc_open_with_reconnect(url, 5)
