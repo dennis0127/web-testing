@@ -15,9 +15,12 @@ def test():
         url = "https://www.ygg.re/"
         sb.uc_open_with_reconnect(url, 5)
         # sb.activate_cdp_mode(url)
+        print(sb.get_page_title())
         # sb.sleep(5)
         sb.uc_gui_click_captcha()
+        print(sb.get_page_title())
         sb.sleep(2)
+        print(sb.get_page_title())
         html_content = sb.get_page_source()
         print(html_content)
 
